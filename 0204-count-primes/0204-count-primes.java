@@ -13,7 +13,7 @@ class Solution {
 
         for (int i = 2; i * i < n; i += 1) {
             if (prime[i]) {
-                for (int multiple = i * i; multiple <= n; multiple += i) {
+                for (int multiple = i * i; multiple < n; multiple += i) {
                     prime[multiple] = false;
                 }
             }
